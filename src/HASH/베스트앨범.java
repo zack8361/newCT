@@ -20,12 +20,10 @@ public class 베스트앨범 {
                 map.put(genres[i],map.get(genres[i]) + players[i]);
             }
         }
-        for (int i = 0; i < players.length; i++) {
-
-        }
 
         int[] answer = new int[map.size()*2];
 
+        System.out.println("map = " + map);
 
         return new int[0];
     }
