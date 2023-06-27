@@ -41,9 +41,6 @@ public class LRURLURLUR {
                 int nx2 = now.x;
                 int ny2 = now.y;
 
-
-                System.out.println("nx = " + nx);
-                System.out.println("ny = " + ny);
                 if (dirs.charAt(i) == 'U') {
                     nx-=1;
                     nx2-=2;
