@@ -3,9 +3,13 @@ package SkillTestLv2;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 
+
+/**
+ * 무조건 다시 풀어보기
+ */
 public class LRURLURLUR {
 
-    private static int cnt = 1;
+    private static int cnt = 0;
     public static void main(String[] args) {
         String dirs = "LULLLLLLU";
         System.out.println(solution(dirs));
@@ -42,7 +46,7 @@ public class LRURLURLUR {
                 System.out.println("ny = " + ny);
                 if (dirs.charAt(i) == 'U') {
                     nx-=1;
-                    nx2-=1;
+                    nx2-=2;
                 }
                 else if (dirs.charAt(i) == 'L') {
                     ny-=1;
