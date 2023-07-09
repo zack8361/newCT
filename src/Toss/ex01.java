@@ -64,7 +64,7 @@ public class ex01 {
             if(!visited[i]){
                 visited[i] = true;
                 dfs(now,s,answer+ans.charAt(i),ans);
-                visited[i] = false;ㅅ
+                visited[i] = false;
             }
         }
     }
