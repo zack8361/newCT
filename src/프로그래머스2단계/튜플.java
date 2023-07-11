@@ -44,7 +44,7 @@ public class 튜플 {
             arr[a++] = Integer.parseInt(s1);
             map.remove(s1,max);
         }
-        
+
         return arr;
     }
 }
