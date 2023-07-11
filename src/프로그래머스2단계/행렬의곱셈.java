@@ -25,7 +25,7 @@ public class 행렬의곱셈 {
         for (int i = 0; i < arr1.length; i++) {
             int num = 0;
             for (int j = 0; j < arr2.length; j++) {
-                a
+
             }
         }
         return new int[0][0];
