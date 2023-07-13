@@ -59,7 +59,7 @@ public class 뉴스클러스터링 {
         for (String s : map1.keySet()) {
             double kyo = 0;
             if(map.containsKey(s)){
-                kyo = Math.min(map.get(s),map1.get(s));
+                kyo++;
                 k +=kyo;
                 map1.put(s,1);
             }
@@ -71,7 +71,12 @@ public class 뉴스클러스터링 {
 
         h = map.size();
 
+        if(h==0 && k==0){
+            return 65336;
+        }
+
         double midAns = ((k/h) * 65536);
+
 
         return (int) midAns;
     }
