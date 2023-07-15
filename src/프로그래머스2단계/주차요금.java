@@ -61,7 +61,7 @@ public class 주차요금 {
         }
         System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
         System.out.println("map1 = " + map1);
-        
+
         System.out.println("map = " + map);
         
         return answer;
