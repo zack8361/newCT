@@ -40,7 +40,7 @@ public class 삼각달팽이 {
                 dir = (dir+1) % 3;
             }
             x = x + dx[dir];
-            y = y+ dy[dir];
+            y = y + dy[dir];
         }
 
         for (int i = 0; i < arr.length; i++) {
