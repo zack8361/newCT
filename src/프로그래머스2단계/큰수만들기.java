@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class 큰수만들기 {
 
+    private static int max = Integer.MIN_VALUE;
     private static boolean[] visited;
     public static void main(String[] args) {
         String number = "1231234";
@@ -12,21 +13,30 @@ public class 큰수만들기 {
     }
 
     private static String solution(String number, int k) {
+        int cnt = number.length()-k;
 
         visited = new boolean[number.length()];
-        int cnt = number.length()-k;
-        dfs(cnt,"",number,0);
-        return null;
+        for (int i = 0; i < cnt; i++) {
+            if(!visited[i]){
+                visited[i] = true;
+                dfs(number,i,String.valueOf(number.charAt(i)),cnt);
+            }
+        }
+
+
+        return String.valueOf(max);
+
     }
 
-    private static void dfs(int cnt, String s, String number,int now) {
+    private static void dfs(String number, int now, String s, int cnt) {
 
         if(s.length() == cnt){
-            System.out.println("s = " + s);
+            max = Math.max(max,Integer.parseInt(s));
             return;
         }
-        for (int i = now; i < number.length(); i++) {
-            dfs(cnt, s + String.valueOf(number.charAt(i)), number,now+1);
+
+        for (int i = now+1; i < number.length(); i++) {
+            dfs(number,i,s+number.charAt(i),cnt);
         }
     }
 }
