@@ -78,7 +78,6 @@ public class ex05 {
                     }
                 }
             }
-
 //            size
             else {
                 System.out.println(pq.size());
