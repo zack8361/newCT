@@ -52,6 +52,7 @@ public class 연속된부분수열의합2 {
             }
         }
 
+
         int[] answer = new int[2];
         if(ans.length() == 1){
             answer[0] = Integer.parseInt(String.valueOf(ans.charAt(0)));
@@ -59,7 +60,7 @@ public class 연속된부분수열의합2 {
         }
         else {
             answer[0] = Integer.parseInt(String.valueOf(ans.charAt(0)));
-            (answer[1] = Integer.parseInt(String.valueOf(ans.charAt(1)));
+            answer[1] = Integer.parseInt(String.valueOf(ans.charAt(1)));
         }
         return answer;
     }
