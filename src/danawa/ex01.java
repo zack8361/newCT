@@ -15,6 +15,5 @@ public class ex01 {
             answer = i;
         }
         System.out.println(answer);
-
     }
 }
