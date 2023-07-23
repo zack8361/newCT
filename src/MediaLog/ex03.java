@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class ex03 {
     public static void main(String[] args) {
 
-        String s = "abcabcabc";
+        String s = "abcabcabcd";
         System.out.println(solution(s));
     }
 
