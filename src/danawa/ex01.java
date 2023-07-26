@@ -9,6 +9,7 @@ public class ex01 {
         int sum = 0;
         int i = 0;
         int answer = 0;
+
         while (sum<N){
             i++;
             sum += i;

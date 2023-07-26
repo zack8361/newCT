@@ -29,7 +29,7 @@ public class ex02 {
             }
 
             System.out.println("Case #" + i);
-            System.out.println(first +" " + second);
+            System.out.println(first + " " + second);
 
         }
     }
